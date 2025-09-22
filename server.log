@@ -1,0 +1,728 @@
+2025-08-21 14:16:20,395 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.180.225.243:5000
+2025-08-21 14:16:20,395 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-21 14:16:20,404 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:16:20,878 - WARNING -  * Debugger is active!
+2025-08-21 14:16:20,881 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:19:13,022 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\upload_json.py', reloading
+2025-08-21 14:19:13,095 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:19:13,786 - WARNING -  * Debugger is active!
+2025-08-21 14:19:13,788 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:19:18,244 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\re\\__init__.py', reloading
+2025-08-21 14:19:18,861 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:19:19,361 - WARNING -  * Debugger is active!
+2025-08-21 14:19:19,362 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:19:19,884 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\requests\\__init__.py', reloading
+2025-08-21 14:19:20,424 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:19:20,933 - WARNING -  * Debugger is active!
+2025-08-21 14:19:20,934 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:20:33,968 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\upload_json.py', reloading
+2025-08-21 14:20:33,973 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\upload_json.py', reloading
+2025-08-21 14:20:34,064 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:20:34,552 - WARNING -  * Debugger is active!
+2025-08-21 14:20:34,553 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:21:01,011 - INFO - Received JSON data for processing.
+2025-08-21 14:21:01,011 - INFO - Executing D:\Project\IWIN_Project\json_test\jsonConvert\env\python.exe D:\Project\IWIN_Project\json_test\jsonConvert\worker_py2.py
+2025-08-21 14:21:01,422 - ERROR - Unexpected error occurred: write() argument must be str, not bytes
+2025-08-21 14:21:01,422 - INFO - 127.0.0.1 - - [21/Aug/2025 14:21:01] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-08-21 14:23:08,860 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\requests\\api.py', reloading
+2025-08-21 14:23:09,752 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:23:10,249 - WARNING -  * Debugger is active!
+2025-08-21 14:23:10,250 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:23:24,539 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\upload_json.py', reloading
+2025-08-21 14:23:24,545 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\upload_json.py', reloading
+2025-08-21 14:23:25,322 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:23:25,796 - WARNING -  * Debugger is active!
+2025-08-21 14:23:25,798 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:23:29,975 - INFO - Received JSON data for processing.
+2025-08-21 14:23:29,975 - INFO - Executing D:\Project\IWIN_Project\json_test\jsonConvert\env\python.exe D:\Project\IWIN_Project\json_test\jsonConvert\worker_py2.py
+2025-08-21 14:23:30,332 - ERROR - Unexpected error occurred: write() argument must be str, not bytes
+2025-08-21 14:23:30,333 - INFO - 127.0.0.1 - - [21/Aug/2025 14:23:30] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-08-21 14:24:24,731 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:24:24,734 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:24:24,914 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:24:25,371 - WARNING -  * Debugger is active!
+2025-08-21 14:24:25,372 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:24:28,852 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:24:28,855 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:24:29,442 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:24:29,922 - WARNING -  * Debugger is active!
+2025-08-21 14:24:29,923 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:24:41,583 - INFO - Received JSON data for processing.
+2025-08-21 14:24:41,583 - INFO - Executing D:\Project\IWIN_Project\json_test\jsonConvert\env\python.exe D:\Project\IWIN_Project\json_test\jsonConvert\worker_py2.py
+2025-08-21 14:24:41,959 - ERROR - Unexpected error occurred: write() argument must be str, not bytes
+2025-08-21 14:24:41,959 - INFO - 127.0.0.1 - - [21/Aug/2025 14:24:41] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-08-21 14:25:44,974 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:25:44,978 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:25:45,070 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:25:45,569 - WARNING -  * Debugger is active!
+2025-08-21 14:25:45,571 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:25:48,641 - INFO - 127.0.0.1 - - [21/Aug/2025 14:25:48] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-08-21 14:25:48,653 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\requests\\models.py', reloading
+2025-08-21 14:25:48,659 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\json\\decoder.py', reloading
+2025-08-21 14:25:49,633 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:25:50,091 - WARNING -  * Debugger is active!
+2025-08-21 14:25:50,092 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:26:36,693 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:26:36,696 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:26:37,208 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:26:37,717 - WARNING -  * Debugger is active!
+2025-08-21 14:26:37,718 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:27:12,555 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:27:12,559 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:27:12,811 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:27:13,320 - WARNING -  * Debugger is active!
+2025-08-21 14:27:13,322 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:27:24,890 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:27:24,896 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:27:25,393 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:27:25,889 - WARNING -  * Debugger is active!
+2025-08-21 14:27:25,890 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:27:28,329 - INFO - Received JSON data for processing.
+2025-08-21 14:27:28,329 - INFO - Executing D:\Project\IWIN_Project\json_test\jsonConvert\env\python.exe D:\Project\IWIN_Project\json_test\jsonConvert\worker_py2.py
+2025-08-21 14:27:29,133 - ERROR - Error occurred while executing script: Traceback (most recent call last):
+  File "D:\Project\IWIN_Project\json_test\jsonConvert\worker_py2.py", line 14, in <module>
+    main()
+  File "D:\Project\IWIN_Project\json_test\jsonConvert\worker_py2.py", line 8, in main
+    data = json.loads(raw)
+  File "D:\Project\IWIN_Project\json_test\jsonConvert\env\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\Project\IWIN_Project\json_test\jsonConvert\env\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Project\IWIN_Project\json_test\jsonConvert\env\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+2025-08-21 14:27:29,134 - INFO - 127.0.0.1 - - [21/Aug/2025 14:27:29] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-08-21 14:28:43,347 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:28:43,350 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:28:44,020 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:28:44,511 - WARNING -  * Debugger is active!
+2025-08-21 14:28:44,512 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:29:00,751 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\worker_py2.py', reloading
+2025-08-21 14:29:00,755 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\worker_py2.py', reloading
+2025-08-21 14:29:01,584 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:29:02,041 - WARNING -  * Debugger is active!
+2025-08-21 14:29:02,042 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:29:10,857 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:29:10,860 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:29:11,109 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:29:11,571 - WARNING -  * Debugger is active!
+2025-08-21 14:29:11,572 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:29:13,379 - INFO - Received JSON data for processing.
+2025-08-21 14:29:13,380 - INFO - Executing D:\Project\IWIN_Project\json_test\jsonConvert\env\python.exe D:\Project\IWIN_Project\json_test\jsonConvert\worker_py2.py
+2025-08-21 14:29:13,794 - ERROR - Error occurred while executing script: Traceback (most recent call last):
+  File "D:\Project\IWIN_Project\json_test\jsonConvert\worker_py2.py", line 15, in <module>
+    main()
+  File "D:\Project\IWIN_Project\json_test\jsonConvert\worker_py2.py", line 9, in main
+    data = json.loads(raw)
+  File "D:\Project\IWIN_Project\json_test\jsonConvert\env\lib\json\__init__.py", line 339, in loads
+    return _default_decoder.decode(s)
+  File "D:\Project\IWIN_Project\json_test\jsonConvert\env\lib\json\decoder.py", line 364, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "D:\Project\IWIN_Project\json_test\jsonConvert\env\lib\json\decoder.py", line 382, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+2025-08-21 14:29:13,794 - INFO - 127.0.0.1 - - [21/Aug/2025 14:29:13] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-08-21 14:29:59,619 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 14:29:59,678 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:30:00,202 - WARNING -  * Debugger is active!
+2025-08-21 14:30:00,204 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:30:02,302 - INFO - Received JSON data for processing.
+2025-08-21 14:30:02,302 - INFO - Executing D:\Project\IWIN_Project\json_test\jsonConvert\env\python.exe D:\Project\IWIN_Project\json_test\jsonConvert\worker_py2.py
+2025-08-21 14:30:02,700 - INFO - Script executed successfully: {"plant":[],"pou":{"function":[],"program":[{"variable":[{"initialValue":"False","number":0,"name":"Reset","location":"...","edit":"True","tree":"([],[])","documentation":"...","class":"Input","type":"BOOL","option":"..."},{"initialValue":"0","number":1,"name":"Cnt","location":"...","edit":"True","tree":"([],[])","documentation":"...","class":"Local","type":"INT","option":"..."},{"initialValue":"0","number":2,"name":"Out","location":"...","edit":"True","tree":"([],[])","documentation":"...","class":"Local","type":"INT","option":"..."},{"initialValue":"0","number":3,"name":"ResetCounterValue","location":"...","edit":"True","tree":"([],[])","documentation":"...","class":"Local","type":"INT","option":"..."}],"code":"IF Reset THEN\n  Cnt := ResetCounterValue;\nELSE\n  Cnt := Cnt + 1;\nEND_IF;\n\nOut := Cnt;","type":"program","name":"pro1","language":"ST"}],"functionBlock":[],"libFB":[]},"config":{"resource":[{"variable":[],"instance":[{"Task":"task0","Type":"program0","Name":"instance0","type":"pro1"}],"task":[{"Priority":0,"Single":"...","Interval":"T#20ms","Name":"task0","Triggering":"cyclic"}],"type":"resource","name":"Res0"}],"IT_OT_variable":[{"Name":"FIFO1","Location":"...","Type":"BOOL","Value":"False","Description":"IT OT sharing variable"}],"name":"Config0"},"contentHeader":"ST_Language","IT":[],"python":[],"Cpp":[],"C":[],"iconfig":{"Components":[],"Lines":[]}}
+keys: [u'plant', u'iconfig', u'python', u'pou', u'IT', u'Cpp', u'C', u'config', u'contentHeader']
+2025-08-21 14:30:02,700 - INFO - 127.0.0.1 - - [21/Aug/2025 14:30:02] "POST /upload HTTP/1.1" 200 -
+2025-08-21 14:30:40,392 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\worker_py2.py', reloading
+2025-08-21 14:30:40,397 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\worker_py2.py', reloading
+2025-08-21 14:30:41,301 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:30:41,801 - WARNING -  * Debugger is active!
+2025-08-21 14:30:41,803 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:30:43,181 - INFO - Received JSON data for processing.
+2025-08-21 14:30:43,181 - INFO - Executing D:\Project\IWIN_Project\json_test\jsonConvert\env\python.exe D:\Project\IWIN_Project\json_test\jsonConvert\worker_py2.py
+2025-08-21 14:30:43,583 - INFO - Script executed successfully: keys: [u'plant', u'iconfig', u'python', u'pou', u'IT', u'Cpp', u'C', u'config', u'contentHeader']
+2025-08-21 14:30:43,583 - INFO - 127.0.0.1 - - [21/Aug/2025 14:30:43] "POST /upload HTTP/1.1" 200 -
+2025-08-21 14:31:00,513 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\platform.py', reloading
+2025-08-21 14:31:00,551 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\datetime.py', reloading
+2025-08-21 14:31:00,552 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\_pydatetime.py', reloading
+2025-08-21 14:31:00,730 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\traceback.py', reloading
+2025-08-21 14:31:00,894 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:31:01,397 - WARNING -  * Debugger is active!
+2025-08-21 14:31:01,398 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:37:24,075 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\posixpath.py', reloading
+2025-08-21 14:37:24,827 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:37:25,323 - WARNING -  * Debugger is active!
+2025-08-21 14:37:25,325 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:42:53,207 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\jaon2c_test.py', reloading
+2025-08-21 14:42:53,689 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:42:54,248 - WARNING -  * Debugger is active!
+2025-08-21 14:42:54,251 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:44:20,511 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\sympy\\__init__.py', reloading
+2025-08-21 14:44:21,392 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:44:21,867 - WARNING -  * Debugger is active!
+2025-08-21 14:44:21,869 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 14:44:27,370 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\jaon2c_test.py', reloading
+2025-08-21 14:44:27,374 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\jaon2c_test.py', reloading
+2025-08-21 14:44:27,940 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 14:44:28,434 - WARNING -  * Debugger is active!
+2025-08-21 14:44:28,435 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 15:09:44,050 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Scripts\\conda-script.py', reloading
+2025-08-21 15:09:44,282 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 15:09:44,885 - WARNING -  * Debugger is active!
+2025-08-21 15:09:44,886 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 15:34:41,314 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\subprocess.py', reloading
+2025-08-21 15:34:41,444 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 15:34:42,625 - WARNING -  * Debugger is active!
+2025-08-21 15:34:42,628 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 16:06:47,760 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2c.py', reloading
+2025-08-21 16:06:47,975 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 16:06:48,648 - WARNING -  * Debugger is active!
+2025-08-21 16:06:48,649 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 16:14:54,450 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\jsonConvert.zip', reloading
+2025-08-21 16:14:54,450 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\config.py', reloading
+2025-08-21 16:14:54,455 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\config.pyc', reloading
+2025-08-21 16:14:54,464 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\__init__.py', reloading
+2025-08-21 16:14:54,470 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\__init__.pyc', reloading
+2025-08-21 16:14:54,470 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\json2py.py', reloading
+2025-08-21 16:14:54,481 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\json2py.pyc', reloading
+2025-08-21 16:14:54,481 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\json2py_old.py', reloading
+2025-08-21 16:14:54,481 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\test\\ITprogram0.py', reloading
+2025-08-21 16:14:54,481 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\util.py', reloading
+2025-08-21 16:14:54,485 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\util.pyc', reloading
+2025-08-21 16:14:54,498 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\jaon2c_test.py', reloading
+2025-08-21 16:14:54,498 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml.py', reloading
+2025-08-21 16:14:54,498 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\OT\\__init__.py', reloading
+2025-08-21 16:14:54,501 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\OT\\__init__.pyc', reloading
+2025-08-21 16:14:54,512 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\OT\\jsonCvter.py', reloading
+2025-08-21 16:14:54,516 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\OT\\jsonCvter.pyc', reloading
+2025-08-21 16:14:54,516 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\OT\\jsonCvter_old.py', reloading
+2025-08-21 16:14:54,521 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\PLCGenerator.py', reloading
+2025-08-21 16:14:54,528 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\PLCGenerator.pyc', reloading
+2025-08-21 16:14:54,528 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\__init__.py', reloading
+2025-08-21 16:14:54,532 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\__init__.pyc', reloading
+2025-08-21 16:14:54,544 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\BlockInstanceCollector.py', reloading
+2025-08-21 16:14:54,548 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\BlockInstanceCollector.pyc', reloading
+2025-08-21 16:14:54,552 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\definitions.py', reloading
+2025-08-21 16:14:54,556 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\definitions.pyc', reloading
+2025-08-21 16:14:54,581 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\InstancesPathCollector.py', reloading
+2025-08-21 16:14:54,585 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\InstancesPathCollector.pyc', reloading
+2025-08-21 16:14:54,585 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\InstanceTagnameCollector.py', reloading
+2025-08-21 16:14:54,588 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\InstanceTagnameCollector.pyc', reloading
+2025-08-21 16:14:54,605 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\plcopen.py', reloading
+2025-08-21 16:14:54,613 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\plcopen.pyc', reloading
+2025-08-21 16:14:54,631 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\POUVariablesCollector.py', reloading
+2025-08-21 16:14:54,633 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\POUVariablesCollector.pyc', reloading
+2025-08-21 16:14:54,644 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\structures.py', reloading
+2025-08-21 16:14:54,647 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\structures.pyc', reloading
+2025-08-21 16:14:54,684 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\types_enums.py', reloading
+2025-08-21 16:14:54,688 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\types_enums.pyc', reloading
+2025-08-21 16:14:54,688 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\VariableInfoCollector.py', reloading
+2025-08-21 16:14:54,691 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\VariableInfoCollector.pyc', reloading
+2025-08-21 16:14:54,701 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\XSLTModelQuery.py', reloading
+2025-08-21 16:14:54,704 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\XSLTModelQuery.pyc', reloading
+2025-08-21 16:14:54,705 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\postST.py', reloading
+2025-08-21 16:14:54,705 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\runPLC.py', reloading
+2025-08-21 16:14:54,705 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\stopPLC.py', reloading
+2025-08-21 16:14:54,706 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\test_PLCControler.py', reloading
+2025-08-21 16:14:54,711 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\test_PLCControler.pyc', reloading
+2025-08-21 16:14:54,715 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\util\\__init__.pyc', reloading
+2025-08-21 16:14:54,716 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\util\\paths.py', reloading
+2025-08-21 16:14:54,718 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\util\\paths.pyc', reloading
+2025-08-21 16:14:54,719 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\util\\ProcessLogger.py', reloading
+2025-08-21 16:14:54,721 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\util\\ProcessLogger.pyc', reloading
+2025-08-21 16:14:54,721 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\util\\TranslationCatalogs.py', reloading
+2025-08-21 16:14:54,724 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\util\\TranslationCatalogs.pyc', reloading
+2025-08-21 16:14:54,724 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\worker_py2.py', reloading
+2025-08-21 16:14:54,725 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\xmlclass\\__init__.py', reloading
+2025-08-21 16:14:54,726 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\xmlclass\\__init__.pyc', reloading
+2025-08-21 16:14:54,729 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\xmlclass\\xmlclass.py', reloading
+2025-08-21 16:14:54,734 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\xmlclass\\xmlclass.pyc', reloading
+2025-08-21 16:14:54,736 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\xmlclass\\xsdschema.py', reloading
+2025-08-21 16:14:54,740 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\xmlclass\\xsdschema.pyc', reloading
+2025-08-21 16:14:54,741 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\XSLTransform.py', reloading
+2025-08-21 16:14:54,744 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\XSLTransform.pyc', reloading
+2025-08-21 16:14:54,760 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\jsonConvert.zip', reloading
+2025-08-21 16:14:55,180 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 16:14:55,669 - WARNING -  * Debugger is active!
+2025-08-21 16:14:55,672 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 16:15:15,883 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Scripts\\conda-script.py', reloading
+2025-08-21 16:15:16,762 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 16:15:17,413 - WARNING -  * Debugger is active!
+2025-08-21 16:15:17,414 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 17:42:48,401 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Scripts\\conda-script.py', reloading
+2025-08-21 17:42:49,267 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 17:42:49,963 - WARNING -  * Debugger is active!
+2025-08-21 17:42:49,965 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 19:21:34,903 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Scripts\\conda-script.py', reloading
+2025-08-21 19:21:35,722 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 19:21:36,374 - WARNING -  * Debugger is active!
+2025-08-21 19:21:36,376 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 19:23:39,199 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\Beremiz.py', reloading
+2025-08-21 19:23:39,199 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\Beremiz.py', reloading
+2025-08-21 19:23:39,200 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\BeremizIDE.py', reloading
+2025-08-21 19:23:39,201 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\BeremizIDE.py', reloading
+2025-08-21 19:23:39,201 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\Beremiz_service.py', reloading
+2025-08-21 19:23:39,202 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\Beremiz_service.py', reloading
+2025-08-21 19:23:39,202 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\CodeFileTreeNode.py', reloading
+2025-08-21 19:23:39,202 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\CodeFileTreeNode.py', reloading
+2025-08-21 19:23:39,203 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\ConfigTreeNode.py', reloading
+2025-08-21 19:23:39,203 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\ConfigTreeNode.py', reloading
+2025-08-21 19:23:39,203 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\IDEFrame.py', reloading
+2025-08-21 19:23:39,203 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\IDEFrame.py', reloading
+2025-08-21 19:23:39,203 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\NativeLib.py', reloading
+2025-08-21 19:23:39,204 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\NativeLib.py', reloading
+2025-08-21 19:23:39,204 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PLCControler.py', reloading
+2025-08-21 19:23:39,204 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PLCControler.py', reloading
+2025-08-21 19:23:39,204 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PLCGenerator.py', reloading
+2025-08-21 19:23:39,204 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PLCGenerator.py', reloading
+2025-08-21 19:23:39,204 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PLCOpenEditor.py', reloading
+2025-08-21 19:23:39,205 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PLCOpenEditor.py', reloading
+2025-08-21 19:23:39,205 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\POULibrary.py', reloading
+2025-08-21 19:23:39,205 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\POULibrary.py', reloading
+2025-08-21 19:23:39,205 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PSKManagement.py', reloading
+2025-08-21 19:23:39,205 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PSKManagement.py', reloading
+2025-08-21 19:23:39,205 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\ProjectController.py', reloading
+2025-08-21 19:23:39,205 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\ProjectController.py', reloading
+2025-08-21 19:23:39,205 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\XSLTransform.py', reloading
+2025-08-21 19:23:39,207 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\XSLTransform.py', reloading
+2025-08-21 19:23:39,207 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\arduino\\__init__.py', reloading
+2025-08-21 19:23:39,207 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\arduino\\__init__.py', reloading
+2025-08-21 19:23:39,207 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\arduino\\__init__.py', reloading
+2025-08-21 19:23:39,523 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 19:23:40,019 - WARNING -  * Debugger is active!
+2025-08-21 19:23:40,020 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 19:23:40,033 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-08-21 19:23:40,034 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-08-21 19:23:40,034 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\flask\\app.py', reloading
+2025-08-21 19:23:40,034 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-08-21 19:23:40,035 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-08-21 19:23:40,035 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+2025-08-21 19:23:40,035 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-08-21 19:23:40,035 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\flask\\typing.py', reloading
+2025-08-21 19:23:40,035 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\flask\\sansio\\app.py', reloading
+2025-08-21 19:23:40,035 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\flask\\sansio\\scaffold.py', reloading
+2025-08-21 19:23:40,035 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-08-21 19:23:40,037 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-08-21 19:23:40,037 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-08-21 19:23:40,037 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-08-21 19:23:40,037 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+2025-08-21 19:23:40,037 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-08-21 19:23:40,037 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\subprocess.py', reloading
+2025-08-21 19:23:40,037 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\os.py', reloading
+2025-08-21 19:23:40,038 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\ntpath.py', reloading
+2025-08-21 19:23:40,039 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\locale.py', reloading
+2025-08-21 19:23:40,039 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\logging\\__init__.py', reloading
+2025-08-21 19:23:40,040 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\re\\__init__.py', reloading
+2025-08-21 19:23:40,040 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\requests\\__init__.py', reloading
+2025-08-21 19:23:40,040 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\requests\\api.py', reloading
+2025-08-21 19:23:40,041 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\json\\__init__.py', reloading
+2025-08-21 19:23:40,042 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\posixpath.py', reloading
+2025-08-21 19:23:40,042 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\site-packages\\lxml\\__init__.py', reloading
+2025-08-21 19:23:40,042 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\traceback.py', reloading
+2025-08-21 19:23:40,053 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\XSLTransform.py', reloading
+2025-08-21 19:23:40,054 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\postST.py', reloading
+2025-08-21 19:23:40,054 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\runPLC.py', reloading
+2025-08-21 19:23:40,054 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\stopPLC.py', reloading
+2025-08-21 19:23:40,055 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\json2py_old.py', reloading
+2025-08-21 19:23:40,056 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\test\\ITprogram0.py', reloading
+2025-08-21 19:23:40,056 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\OT\\jsonCvter_old.py', reloading
+2025-08-21 19:23:40,056 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\BlockInstanceCollector.py', reloading
+2025-08-21 19:23:40,056 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\InstanceTagnameCollector.py', reloading
+2025-08-21 19:23:40,056 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\InstancesPathCollector.py', reloading
+2025-08-21 19:23:40,057 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\POUVariablesCollector.py', reloading
+2025-08-21 19:23:40,057 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\XSLTModelQuery.py', reloading
+2025-08-21 19:23:40,066 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\platform.py', reloading
+2025-08-21 19:23:40,066 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\datetime.py', reloading
+2025-08-21 19:23:40,066 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Lib\\_pydatetime.py', reloading
+2025-08-21 19:23:41,096 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 19:23:41,612 - WARNING -  * Debugger is active!
+2025-08-21 19:23:41,615 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 19:24:05,124 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\matiec.zip', reloading
+2025-08-21 19:24:05,450 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\matiec.zip', reloading
+2025-08-21 19:24:05,450 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\matiec.zip', reloading
+2025-08-21 19:24:05,696 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 19:24:06,221 - WARNING -  * Debugger is active!
+2025-08-21 19:24:06,222 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 19:24:06,576 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\matiec.zip', reloading
+2025-08-21 19:24:07,281 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 19:24:07,764 - WARNING -  * Debugger is active!
+2025-08-21 19:24:07,766 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 19:59:40,248 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 19:59:41,267 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 19:59:41,796 - WARNING -  * Debugger is active!
+2025-08-21 19:59:41,797 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 19:59:44,149 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml.py', reloading
+2025-08-21 19:59:44,152 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml.py', reloading
+2025-08-21 19:59:44,870 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 19:59:45,400 - WARNING -  * Debugger is active!
+2025-08-21 19:59:45,401 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 19:59:47,356 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 19:59:47,360 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 19:59:47,466 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 19:59:47,977 - WARNING -  * Debugger is active!
+2025-08-21 19:59:47,980 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:00:24,328 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 20:00:24,331 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 20:00:25,062 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:00:25,570 - WARNING -  * Debugger is active!
+2025-08-21 20:00:25,572 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:02:11,130 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 20:02:11,134 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 20:02:11,135 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 20:02:11,710 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:02:12,233 - WARNING -  * Debugger is active!
+2025-08-21 20:02:12,235 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:02:16,420 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 20:02:16,423 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 20:02:17,304 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:02:17,821 - WARNING -  * Debugger is active!
+2025-08-21 20:02:17,822 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:02:53,656 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.180.225.243:5000
+2025-08-21 20:02:53,656 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-21 20:02:53,662 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:02:54,160 - WARNING -  * Debugger is active!
+2025-08-21 20:02:54,161 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:03:21,447 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\jaon2c_test.py', reloading
+2025-08-21 20:03:21,467 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2c_test.py', reloading
+2025-08-21 20:03:22,252 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:03:22,780 - WARNING -  * Debugger is active!
+2025-08-21 20:03:22,782 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:03:33,194 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 20:03:33,197 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\server.py', reloading
+2025-08-21 20:03:33,855 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:03:34,368 - WARNING -  * Debugger is active!
+2025-08-21 20:03:34,370 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:03:45,638 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\upload_json.py', reloading
+2025-08-21 20:03:45,893 - INFO - Received JSON data for processing.
+2025-08-21 20:03:45,893 - INFO - Executing D:\Project\IWIN_Project\json_test\jsonConvert\env\python.exe D:\Project\IWIN_Project\json_test\jsonConvert\json2xml_test.py
+2025-08-21 20:03:46,248 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site.pyc', reloading
+2025-08-21 20:03:46,248 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\os.pyc', reloading
+2025-08-21 20:03:46,248 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\ntpath.pyc', reloading
+2025-08-21 20:03:46,249 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\stat.pyc', reloading
+2025-08-21 20:03:46,249 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\genericpath.pyc', reloading
+2025-08-21 20:03:46,249 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\warnings.pyc', reloading
+2025-08-21 20:03:46,250 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\linecache.pyc', reloading
+2025-08-21 20:03:46,250 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\types.pyc', reloading
+2025-08-21 20:03:46,250 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\UserDict.pyc', reloading
+2025-08-21 20:03:46,251 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\_abcoll.pyc', reloading
+2025-08-21 20:03:46,251 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\abc.pyc', reloading
+2025-08-21 20:03:46,251 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\_weakrefset.pyc', reloading
+2025-08-21 20:03:46,252 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\copy_reg.pyc', reloading
+2025-08-21 20:03:46,252 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\traceback.pyc', reloading
+2025-08-21 20:03:46,253 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\sysconfig.pyc', reloading
+2025-08-21 20:03:46,253 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\re.pyc', reloading
+2025-08-21 20:03:46,253 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\sre_compile.pyc', reloading
+2025-08-21 20:03:46,254 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\sre_parse.pyc', reloading
+2025-08-21 20:03:46,254 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\sre_constants.pyc', reloading
+2025-08-21 20:03:46,255 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\locale.pyc', reloading
+2025-08-21 20:03:46,255 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\encodings\\__init__.pyc', reloading
+2025-08-21 20:03:46,256 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\codecs.pyc', reloading
+2025-08-21 20:03:46,256 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\encodings\\aliases.pyc', reloading
+2025-08-21 20:03:46,256 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\functools.pyc', reloading
+2025-08-21 20:03:46,257 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\encodings\\gbk.pyc', reloading
+2025-08-21 20:03:46,279 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\__future__.pyc', reloading
+2025-08-21 20:03:46,280 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\test_PLCControler.pyc', reloading
+2025-08-21 20:03:46,287 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\copy.pyc', reloading
+2025-08-21 20:03:46,293 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\weakref.pyc', reloading
+2025-08-21 20:03:46,299 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\future\\__init__.pyc', reloading
+2025-08-21 20:03:46,303 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\future\\builtins\\__init__.pyc', reloading
+2025-08-21 20:03:46,307 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\future\\builtins\\iterators.pyc', reloading
+2025-08-21 20:03:46,314 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\future\\utils\\__init__.pyc', reloading
+2025-08-21 20:03:46,319 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\numbers.pyc', reloading
+2025-08-21 20:03:46,327 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\inspect.pyc', reloading
+2025-08-21 20:03:46,334 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\string.pyc', reloading
+2025-08-21 20:03:46,340 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\dis.pyc', reloading
+2025-08-21 20:03:46,346 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\opcode.pyc', reloading
+2025-08-21 20:03:46,353 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\tokenize.pyc', reloading
+2025-08-21 20:03:46,358 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\token.pyc', reloading
+2025-08-21 20:03:46,369 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\collections.pyc', reloading
+2025-08-21 20:03:46,376 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\keyword.pyc', reloading
+2025-08-21 20:03:46,382 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\heapq.pyc', reloading
+2025-08-21 20:03:46,455 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:03:46,979 - WARNING -  * Debugger is active!
+2025-08-21 20:03:46,981 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:03:47,087 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\types_enums.pyc', reloading
+2025-08-21 20:03:47,087 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\util\\TranslationCatalogs.pyc', reloading
+2025-08-21 20:03:47,087 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\InstancesPathCollector.pyc', reloading
+2025-08-21 20:03:47,088 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\XSLTModelQuery.pyc', reloading
+2025-08-21 20:03:47,088 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\structures.pyc', reloading
+2025-08-21 20:03:47,088 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\definitions.pyc', reloading
+2025-08-21 20:03:47,118 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\XSLTransform.pyc', reloading
+2025-08-21 20:03:47,118 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\POUVariablesCollector.pyc', reloading
+2025-08-21 20:03:47,118 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\InstanceTagnameCollector.pyc', reloading
+2025-08-21 20:03:47,119 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\BlockInstanceCollector.pyc', reloading
+2025-08-21 20:03:47,121 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\plcopen\\VariableInfoCollector.pyc', reloading
+2025-08-21 20:03:47,122 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\PLCGenerator.pyc', reloading
+2025-08-21 20:03:47,122 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\util\\ProcessLogger.pyc', reloading
+2025-08-21 20:03:47,141 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\ctypes\\__init__.pyc', reloading
+2025-08-21 20:03:47,163 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\ctypes\\_endian.pyc', reloading
+2025-08-21 20:03:47,165 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\__init__.pyc', reloading
+2025-08-21 20:03:47,165 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\__init__.pyc', reloading
+2025-08-21 20:03:47,165 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\__init__.pyc', reloading
+2025-08-21 20:03:47,165 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\__init__.pyc', reloading
+2025-08-21 20:03:47,166 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\util.pyc', reloading
+2025-08-21 20:03:47,166 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\json\\__init__.pyc', reloading
+2025-08-21 20:03:47,166 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\json\\decoder.pyc', reloading
+2025-08-21 20:03:47,166 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\json\\scanner.pyc', reloading
+2025-08-21 20:03:47,167 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\json\\encoder.pyc', reloading
+2025-08-21 20:03:47,167 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\json2py.pyc', reloading
+2025-08-21 20:03:47,170 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\json2py.pyc', reloading
+2025-08-21 20:03:47,170 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\json2py.pyc', reloading
+2025-08-21 20:03:47,170 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\IT\\json2py.pyc', reloading
+2025-08-21 20:03:47,170 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\OT\\__init__.pyc', reloading
+2025-08-21 20:03:47,170 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\OT\\jsonCvter.pyc', reloading
+2025-08-21 20:03:47,178 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\requests\\__init__.pyc', reloading
+2025-08-21 20:03:47,185 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\__init__.pyc', reloading
+2025-08-21 20:03:47,193 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\exceptions.pyc', reloading
+2025-08-21 20:03:47,194 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\packages\\__init__.pyc', reloading
+2025-08-21 20:03:47,200 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\packages\\six.pyc', reloading
+2025-08-21 20:03:47,209 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\httplib.pyc', reloading
+2025-08-21 20:03:47,217 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\mimetools.pyc', reloading
+2025-08-21 20:03:47,223 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\tempfile.pyc', reloading
+2025-08-21 20:03:47,228 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\random.pyc', reloading
+2025-08-21 20:03:47,234 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\hashlib.pyc', reloading
+2025-08-21 20:03:47,566 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\rfc822.pyc', reloading
+2025-08-21 20:03:47,572 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\_version.pyc', reloading
+2025-08-21 20:03:47,581 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\connectionpool.pyc', reloading
+2025-08-21 20:03:47,590 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\_collections.pyc', reloading
+2025-08-21 20:03:47,596 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\connection.pyc', reloading
+2025-08-21 20:03:47,601 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\__init__.pyc', reloading
+2025-08-21 20:03:47,608 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\connection.pyc', reloading
+2025-08-21 20:03:47,608 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\contrib\\__init__.pyc', reloading
+2025-08-21 20:03:47,613 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\contrib\\_appengine_environ.pyc', reloading
+2025-08-21 20:03:47,617 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\wait.pyc', reloading
+2025-08-21 20:03:47,638 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\request.pyc', reloading
+2025-08-21 20:03:47,646 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\response.pyc', reloading
+2025-08-21 20:03:47,651 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\email\\__init__.pyc', reloading
+2025-08-21 20:03:47,652 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\email\\mime\\__init__.pyc', reloading
+2025-08-21 20:03:47,657 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\email\\errors.pyc', reloading
+2025-08-21 20:03:47,663 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\retry.pyc', reloading
+2025-08-21 20:03:47,672 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\ssl_.pyc', reloading
+2025-08-21 20:03:47,677 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\hmac.pyc', reloading
+2025-08-21 20:03:47,684 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\url.pyc', reloading
+2025-08-21 20:03:47,697 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\ssltransport.pyc', reloading
+2025-08-21 20:03:47,704 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\timeout.pyc', reloading
+2025-08-21 20:03:47,710 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\proxy.pyc', reloading
+2025-08-21 20:03:47,715 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\ssl_match_hostname.pyc', reloading
+2025-08-21 20:03:47,720 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\Queue.pyc', reloading
+2025-08-21 20:03:47,727 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\request.pyc', reloading
+2025-08-21 20:03:47,731 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\filepost.pyc', reloading
+2025-08-21 20:03:47,737 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\fields.pyc', reloading
+2025-08-21 20:03:47,744 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\email\\utils.pyc', reloading
+2025-08-21 20:03:47,749 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\email\\_parseaddr.pyc', reloading
+2025-08-21 20:03:47,756 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\calendar.pyc', reloading
+2025-08-21 20:03:47,762 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\quopri.pyc', reloading
+2025-08-21 20:03:47,768 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\email\\encoders.pyc', reloading
+2025-08-21 20:03:47,774 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\mimetypes.pyc', reloading
+2025-08-21 20:03:47,781 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\posixpath.pyc', reloading
+2025-08-21 20:03:47,787 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\response.pyc', reloading
+2025-08-21 20:03:47,792 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\util\\queue.pyc', reloading
+2025-08-21 20:03:47,793 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\packages\\backports\\__init__.pyc', reloading
+2025-08-21 20:03:47,798 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\packages\\backports\\weakref_finalize.pyc', reloading
+2025-08-21 20:03:47,806 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\urllib3\\poolmanager.pyc', reloading
+2025-08-21 20:03:47,814 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\requests\\exceptions.pyc', reloading
+2025-08-21 20:03:47,819 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\requests\\compat.pyc', reloading
+2025-08-21 20:03:47,825 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\__init__.pyc', reloading
+2025-08-21 20:03:47,831 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\universaldetector.pyc', reloading
+2025-08-21 20:03:47,836 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\charsetgroupprober.pyc', reloading
+2025-08-21 20:03:47,840 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\enums.pyc', reloading
+2025-08-21 20:03:47,846 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\charsetprober.pyc', reloading
+2025-08-21 20:03:47,850 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\escprober.pyc', reloading
+2025-08-21 20:03:47,855 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\codingstatemachine.pyc', reloading
+2025-08-21 20:03:47,862 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\escsm.pyc', reloading
+2025-08-21 20:03:47,867 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\latin1prober.pyc', reloading
+2025-08-21 20:03:47,872 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\mbcsgroupprober.pyc', reloading
+2025-08-21 20:03:47,876 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\utf8prober.pyc', reloading
+2025-08-21 20:03:47,884 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\mbcssm.pyc', reloading
+2025-08-21 20:03:47,892 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\sjisprober.pyc', reloading
+2025-08-21 20:03:47,898 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\mbcharsetprober.pyc', reloading
+2025-08-21 20:03:47,904 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\chardistribution.pyc', reloading
+2025-08-21 20:03:47,911 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\euctwfreq.pyc', reloading
+2025-08-21 20:03:47,916 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\euckrfreq.pyc', reloading
+2025-08-21 20:03:47,921 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\gb2312freq.pyc', reloading
+2025-08-21 20:03:47,926 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\big5freq.pyc', reloading
+2025-08-21 20:03:47,931 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\jisfreq.pyc', reloading
+2025-08-21 20:03:47,938 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\jpcntx.pyc', reloading
+2025-08-21 20:03:47,943 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\eucjpprober.pyc', reloading
+2025-08-21 20:03:47,948 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\gb2312prober.pyc', reloading
+2025-08-21 20:03:47,953 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\euckrprober.pyc', reloading
+2025-08-21 20:03:47,957 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\cp949prober.pyc', reloading
+2025-08-21 20:03:47,962 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\big5prober.pyc', reloading
+2025-08-21 20:03:47,968 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\euctwprober.pyc', reloading
+2025-08-21 20:03:47,973 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\sbcsgroupprober.pyc', reloading
+2025-08-21 20:03:47,979 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\hebrewprober.pyc', reloading
+2025-08-21 20:03:47,985 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\langbulgarianmodel.pyc', reloading
+2025-08-21 20:03:47,990 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\env\\Lib\\site-packages\\chardet\\sbcharsetprober.pyc', reloading
+2025-08-21 20:03:48,043 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:03:48,548 - WARNING -  * Debugger is active!
+2025-08-21 20:03:48,549 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:04:18,140 - INFO - Received JSON data for processing.
+2025-08-21 20:04:18,140 - INFO - Executing D:\Project\IWIN_Project\json_test\jsonConvert\env\python.exe D:\Project\IWIN_Project\json_test\jsonConvert\json2xml_test.py
+2025-08-21 20:04:18,742 - INFO - Script executed successfully: 
+2025-08-21 20:04:18,742 - INFO - 127.0.0.1 - - [21/Aug/2025 20:04:18] "POST /upload HTTP/1.1" 200 -
+2025-08-21 20:05:01,496 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\worker_py2.py', reloading
+2025-08-21 20:05:01,667 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:05:02,196 - WARNING -  * Debugger is active!
+2025-08-21 20:05:02,198 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:05:34,153 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 20:05:34,157 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 20:05:34,285 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:05:34,781 - WARNING -  * Debugger is active!
+2025-08-21 20:05:34,782 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:05:37,103 - INFO - Received JSON data for processing.
+2025-08-21 20:05:37,103 - INFO - Executing D:\Project\IWIN_Project\json_test\jsonConvert\env\python.exe D:\Project\IWIN_Project\json_test\jsonConvert\json2xml_test.py
+2025-08-21 20:05:37,733 - INFO - Script executed successfully: No plant URL found
+2025-08-21 20:05:37,733 - INFO - 127.0.0.1 - - [21/Aug/2025 20:05:37] "POST /upload HTTP/1.1" 200 -
+2025-08-21 20:10:06,004 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 20:10:06,008 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\jsonConvert\\json2xml_test.py', reloading
+2025-08-21 20:10:07,030 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:10:07,518 - WARNING -  * Debugger is active!
+2025-08-21 20:10:07,519 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:10:19,407 - INFO - Received JSON data for processing.
+2025-08-21 20:10:19,407 - INFO - Executing D:\Project\IWIN_Project\json_test\jsonConvert\env\python.exe D:\Project\IWIN_Project\json_test\jsonConvert\json2xml_test.py
+2025-08-21 20:10:20,013 - INFO - Script executed successfully: No plant URL found
+OT data converted successfully
+2025-08-21 20:10:20,013 - INFO - 127.0.0.1 - - [21/Aug/2025 20:10:20] "POST /upload HTTP/1.1" 200 -
+2025-08-21 20:24:55,464 - INFO -  * Detected change in 'D:\\Software\\anaconda3\\Scripts\\conda-script.py', reloading
+2025-08-21 20:24:56,175 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:24:56,812 - WARNING -  * Debugger is active!
+2025-08-21 20:24:56,814 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:35:01,688 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\Beremiz.py', reloading
+2025-08-21 20:35:01,699 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\BeremizIDE.py', reloading
+2025-08-21 20:35:01,711 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\Beremiz_service.py', reloading
+2025-08-21 20:35:01,739 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\CodeFileTreeNode.py', reloading
+2025-08-21 20:35:01,749 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\ConfigTreeNode.py', reloading
+2025-08-21 20:35:01,761 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\IDEFrame.py', reloading
+2025-08-21 20:35:01,769 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\NativeLib.py', reloading
+2025-08-21 20:35:01,791 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PLCControler.py', reloading
+2025-08-21 20:35:01,808 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PLCGenerator.py', reloading
+2025-08-21 20:35:01,820 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PLCOpenEditor.py', reloading
+2025-08-21 20:35:01,827 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\POULibrary.py', reloading
+2025-08-21 20:35:01,835 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\PSKManagement.py', reloading
+2025-08-21 20:35:01,851 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\ProjectController.py', reloading
+2025-08-21 20:35:01,867 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\XSLTransform.py', reloading
+2025-08-21 20:35:01,879 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\arduino\\__init__.py', reloading
+2025-08-21 20:35:02,298 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:35:03,454 - WARNING -  * Debugger is active!
+2025-08-21 20:35:03,456 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:35:03,613 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\arduino\\builder.py', reloading
+2025-08-21 20:35:03,762 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\arduino\\src\\arduino_builder.py', reloading
+2025-08-21 20:35:04,342 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\bacnet\\BacnetSlaveEditor.py', reloading
+2025-08-21 20:35:04,349 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\bacnet\\__init__.py', reloading
+2025-08-21 20:35:04,360 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\bacnet\\bacnet.py', reloading
+2025-08-21 20:35:04,565 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:35:05,059 - WARNING -  * Debugger is active!
+2025-08-21 20:35:05,060 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:35:05,080 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\ArduinoUploadDialog.py', reloading
+2025-08-21 20:35:05,089 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\ArrayTypeDialog.py', reloading
+2025-08-21 20:35:05,096 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\BlockPreviewDialog.py', reloading
+2025-08-21 20:35:05,105 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\BrowseLocationsDialog.py', reloading
+2025-08-21 20:35:05,114 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\BrowseValuesLibraryDialog.py', reloading
+2025-08-21 20:35:05,123 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\CommentEditDialog.py', reloading
+2025-08-21 20:35:05,136 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\ConnectionDialog.py', reloading
+2025-08-21 20:35:05,155 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\DebuggerRemoteConnDialog.py', reloading
+2025-08-21 20:35:05,163 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\DurationEditorDialog.py', reloading
+2025-08-21 20:35:05,178 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\EditorUpdateDialog.py', reloading
+2025-08-21 20:35:05,192 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\FBDBlockDialog.py', reloading
+2025-08-21 20:35:05,201 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\FBDVariableDialog.py', reloading
+2025-08-21 20:35:05,215 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\FindInPouDialog.py', reloading
+2025-08-21 20:35:05,225 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\ForceVariableDialog.py', reloading
+2025-08-21 20:35:05,230 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\IDManager.py', reloading
+2025-08-21 20:35:05,240 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\IDMergeDialog.py', reloading
+2025-08-21 20:35:05,248 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\LDElementDialog.py', reloading
+2025-08-21 20:35:05,255 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\LDPowerRailDialog.py', reloading
+2025-08-21 20:35:05,261 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\PouActionDialog.py', reloading
+2025-08-21 20:35:05,270 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\PouDialog.py', reloading
+2025-08-21 20:35:05,275 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\PouNameDialog.py', reloading
+2025-08-21 20:35:05,282 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\PouTransitionDialog.py', reloading
+2025-08-21 20:35:05,287 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\ProjectDialog.py', reloading
+2025-08-21 20:35:05,294 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\SFCDivergenceDialog.py', reloading
+2025-08-21 20:35:05,307 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\SFCStepDialog.py', reloading
+2025-08-21 20:35:05,316 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\SFCStepNameDialog.py', reloading
+2025-08-21 20:35:05,328 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\SFCTransitionDialog.py', reloading
+2025-08-21 20:35:05,336 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\SearchInProjectDialog.py', reloading
+2025-08-21 20:35:05,352 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\UriEditor.py', reloading
+2025-08-21 20:35:05,358 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\dialogs\\__init__.py', reloading
+2025-08-21 20:35:05,394 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\doc\\conf.py', reloading
+2025-08-21 20:35:05,664 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\docutil\\__init__.py', reloading
+2025-08-21 20:35:05,675 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\docutil\\dochtml.py', reloading
+2025-08-21 20:35:05,688 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\docutil\\docpdf.py', reloading
+2025-08-21 20:35:05,700 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\docutil\\docsvg.py', reloading
+2025-08-21 20:35:05,713 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\CodeFileEditor.py', reloading
+2025-08-21 20:35:05,725 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\ConfTreeNodeEditor.py', reloading
+2025-08-21 20:35:05,736 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\DataTypeEditor.py', reloading
+2025-08-21 20:35:05,747 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\DebugViewer.py', reloading
+2025-08-21 20:35:05,758 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\EditorPanel.py', reloading
+2025-08-21 20:35:05,769 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\FileManagementPanel.py', reloading
+2025-08-21 20:35:05,777 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\IECCodeViewer.py', reloading
+2025-08-21 20:35:05,791 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\LDViewer.py', reloading
+2025-08-21 20:35:05,800 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\ProjectNodeEditor.py', reloading
+2025-08-21 20:35:05,810 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\ResourceEditor.py', reloading
+2025-08-21 20:35:05,822 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\SFCViewer.py', reloading
+2025-08-21 20:35:05,832 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\TextViewer.py', reloading
+2025-08-21 20:35:05,851 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\editors\\Viewer.py', reloading
+2025-08-21 20:35:05,868 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\etherlab\\CommonEtherCATFunction.py', reloading
+2025-08-21 20:35:05,879 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\etherlab\\ConfigEditor.py', reloading
+2025-08-21 20:35:05,922 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\etherlab\\EtherCATManagementEditor.py', reloading
+2025-08-21 20:35:05,932 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\etherlab\\EthercatCFileGenerator.py', reloading
+2025-08-21 20:35:05,940 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\etherlab\\EthercatCIA402Slave.py', reloading
+2025-08-21 20:35:05,951 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\etherlab\\EthercatMaster.py', reloading
+2025-08-21 20:35:05,960 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\etherlab\\EthercatSlave.py', reloading
+2025-08-21 20:35:05,968 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\etherlab\\__init__.py', reloading
+2025-08-21 20:35:05,993 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\etherlab\\etherlab.py', reloading
+2025-08-21 20:35:06,122 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:35:06,625 - WARNING -  * Debugger is active!
+2025-08-21 20:35:06,626 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:35:07,502 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\modbus\\__init__.py', reloading
+2025-08-21 20:35:07,525 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\modbus\\mb_utils.py', reloading
+2025-08-21 20:35:07,542 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\modbus\\modbus.py', reloading
+2025-08-21 20:35:07,551 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\modbus\\web_settings.py', reloading
+2025-08-21 20:35:07,558 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\opc_ua\\__init__.py', reloading
+2025-08-21 20:35:07,570 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\opc_ua\\client.py', reloading
+2025-08-21 20:35:07,581 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\opc_ua\\opcua_client_maker.py', reloading
+2025-08-21 20:35:07,603 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\plcopen\\BlockInstanceCollector.py', reloading
+2025-08-21 20:35:07,622 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\plcopen\\InstanceTagnameCollector.py', reloading
+2025-08-21 20:35:07,629 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\plcopen\\InstancesPathCollector.py', reloading
+2025-08-21 20:35:07,681 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:35:08,192 - WARNING -  * Debugger is active!
+2025-08-21 20:35:08,193 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:35:08,319 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\svghmi\\hmi_tree.py', reloading
+2025-08-21 20:35:08,336 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\svghmi\\i18n.py', reloading
+2025-08-21 20:35:08,494 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\svghmi\\svghmi.py', reloading
+2025-08-21 20:35:08,503 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\svghmi\\svghmi_server.py', reloading
+2025-08-21 20:35:08,514 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\svghmi\\ui.py', reloading
+2025-08-21 20:35:08,944 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\targets\\Generic\\__init__.py', reloading
+2025-08-21 20:35:08,958 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\targets\\Linux\\__init__.py', reloading
+2025-08-21 20:35:08,980 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\targets\\Win32\\__init__.py', reloading
+2025-08-21 20:35:09,018 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\targets\\Xenomai\\__init__.py', reloading
+2025-08-21 20:35:09,033 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\targets\\__init__.py', reloading
+2025-08-21 20:35:09,072 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\targets\\toolchain_gcc.py', reloading
+2025-08-21 20:35:09,083 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\targets\\toolchain_makefile.py', reloading
+2025-08-21 20:35:09,257 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:35:09,761 - WARNING -  * Debugger is active!
+2025-08-21 20:35:09,762 - INFO -  * Debugger PIN: 268-528-040
+2025-08-21 20:35:09,904 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\tests\\tools\\conftest.py', reloading
+2025-08-21 20:35:09,921 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\tests\\tools\\test_CustomIntCtrl.py', reloading
+2025-08-21 20:35:09,929 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\tests\\tools\\test_application.py', reloading
+2025-08-21 20:35:09,934 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\util\\BitmapLibrary.py', reloading
+2025-08-21 20:35:09,943 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\util\\ExceptionHandler.py', reloading
+2025-08-21 20:35:09,951 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\util\\MiniTextControler.py', reloading
+2025-08-21 20:35:09,959 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\util\\ProcessLogger.py', reloading
+2025-08-21 20:35:09,965 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\util\\TranslationCatalogs.py', reloading
+2025-08-21 20:35:09,973 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\util\\misc.py', reloading
+2025-08-21 20:35:09,978 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\util\\paths.py', reloading
+2025-08-21 20:35:09,986 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\version.py', reloading
+2025-08-21 20:35:09,994 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\wxglade_hmi\\__init__.py', reloading
+2025-08-21 20:35:10,004 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\wxglade_hmi\\wxglade_hmi.py', reloading
+2025-08-21 20:35:10,011 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\xmlclass\\__init__.py', reloading
+2025-08-21 20:35:10,039 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\xmlclass\\xmlclass.py', reloading
+2025-08-21 20:35:10,050 - INFO -  * Detected change in 'D:\\Project\\IWIN_Project\\json_test\\OpenPLC_Editor\\editor\\xmlclass\\xsdschema.py', reloading
+2025-08-21 20:35:10,830 - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-21 20:35:11,323 - WARNING -  * Debugger is active!
+2025-08-21 20:35:11,324 - INFO -  * Debugger PIN: 268-528-040
