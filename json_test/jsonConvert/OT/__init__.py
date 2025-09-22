@@ -1,1 +1,0 @@
-from OT.jsonCvter import OTdataCvter,TEMPLATE_DATA

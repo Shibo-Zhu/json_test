@@ -1,6 +1,6 @@
 import requests
 
-json_file = "C:\\Users\\zs348\\Desktop\\2025_08_21project0.json"
+json_file = "/media/zs/ubuntu_disk/json_test/json_test/input.json"
 
 with open(json_file, "rb") as f:
     files = {"file": (json_file, f, "application/json")}
