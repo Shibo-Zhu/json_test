@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from __future__ import absolute_import
+from __future__ import absolute_import, print_function
+
 import os
 import sys
+import subprocess
 from time import localtime
 from datetime import datetime
 
@@ -575,99 +577,289 @@ def getITtype(elements):
             return 'TerminalDet'
     return False
 
+### OT代码下发、监控变量功能 ###
+
+def upload_file(url, file_path):
+    # 判断上传的文件是否是.st文件
+    if not file_path.endswith('.st'):
+        print('Invalid file type. Only .st files are supported.')
+        exit()
+    # 构造文件上传的数据
+    files = {'file': open(file_path, 'rb')}
+
+    # 发送POST请求
+    url_file = url+'/upload'
+    response = requests.post(url_file, files=files)
+    print('Upload st status Code:', response.status_code)
+    print('Upload st response Body:', response.text)
+
+
+def add_debug_vars(url, payload):
+    url_debug = url+'/add_debug_vars'
+
+    response = requests.post(url_debug, json=payload)
+    print('Add debug vars status Code:', response.status_code)
+    print('Add debug vars response Body:', response.text)
+
+def add_shared_vars(url, payload):
+    url_shared = url + "/add_shared_vars"
+
+    response = requests.post(url_shared, json=payload)
+    print('Add shared vars status Code:', response.status_code)
+    print('Add shared vars response Body:', response.text)
+
+### IT代码下发功能 ###
+# 上传Python脚本
+def upload_py_file(url, file_path):
+    files = {'file': open(file_path, 'rb')}
+    #data = {'priority':priority}
+    url_file = url+'/uploadPy'
+    response = requests.post(url_file, files=files)
+    print('Upload python status Code:', response.status_code)
+    print('Upload python response Body:', response.text)
+
+def upload_c_file(url, file_path):
+    files = {'file': open(file_path, 'rb')}
+    # data = {'priority':priority}
+    url_file = url + '/uploadC'
+    response = requests.post(url_file, files=files)
+    print('Upload C status Code:', response.status_code)
+    print('Upload C response Body:', response.text)
+
+### st代码编译 ###
+def compile_st_code(compile_script_path, program_filepath, working_directory):
+    process = subprocess.Popen(
+        [compile_script_path, program_filepath],
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,   # 把错误输出合并到标准输出
+        universal_newlines=True,     # Python 2 下代替 text=True
+        cwd=working_directory
+    )
+
+    for line in process.stdout:
+        print(line)  # Python 2 写法，末尾逗号表示不换行
+
+    process.wait()  # 等待脚本结束
+    print("\n退出码:", process.returncode)
+
+### PLC代码转换 ###
+def plc_conversion(ProjectPath, data):
+
+    project_xml = os.path.join(ProjectPath, 'plc.xml')
+    Controller = ProjectController(data)
+    Controller.Createxml()
+    Controller.SaveXMLFile(project_xml)
+
+    program_filepath = os.path.join(ProjectPath, "generated_plc.st")
+
+    errors = []
+    warnings = []
+    ProgramChunks = GenerateCurrentProgram(Controller, Controller.Project, errors, warnings)
+    program_text = "".join([item[0] for item in ProgramChunks])
+
+    programfile = open(program_filepath, "w")
+    programfile.write(program_text.encode("utf-8"))
+    programfile.close()
+
+    print('PLC code converted successfully')
+    return program_filepath, project_xml
+
+### 保存py/c/cpp代码 ###
+
+def save_py_code(ProjectPath, data):
+    py_code_index = []
+    if data.get('python') is None:
+        pass
+    python_data = data['python']
+    if python_data == {} or python_data == []:
+        print('Python data is empty')
+        pass
+    else:
+        for py_data in python_data:
+            filename = py_data['filename']
+            code = py_data['text']
+            with open(os.path.join(ProjectPath, filename), 'w') as f:
+                f.write(code)
+            py_code_index.append(filename)
+    return py_code_index
+
+def save_c_code(ProjectPath, data):
+    c_code_index = []
+    if data.get('c') is None:
+        pass
+    c_data = data['c']
+    if c_data == {} or c_data == []:
+        print('C data is empty')
+        pass
+    else:
+        for c_d in c_data:
+            filename = c_d['filename']
+            code = c_d['text']
+            with open(os.path.join(ProjectPath, filename), 'w') as f:
+                f.write(code)
+            c_code_index.append(filename)
+    return c_code_index
+
+def save_cpp_code(ProjectPath, data):
+    cpp_code_index = []
+    if data.get('cpp') is None:
+        pass
+    cpp_data = data['cpp']
+    if cpp_data == {} or cpp_data == []:
+        print('C++ data is empty')
+        pass
+    else:
+        for cpp_d in cpp_data:
+            filename = cpp_d['filename']
+            code = cpp_d['text']
+            with open(os.path.join(ProjectPath, filename), 'w') as f:
+                f.write(code)
+            cpp_code_index.append(filename)
+    return cpp_code_index
+
+### IT/组态代码转换 ###
+# def save_it_code(ProjectPath, data):
+#     code_index = []
+#     if data.get('IT') is not None:
+#         IT_data = data['IT']
+#     elif data.get('it') is not None:
+#         IT_data = data['it']
+#     if IT_data == {} or IT_data == []:
+#         print('IT data is empty')
+#         pass
+#     else:
+#         for i in range(len(IT_data)):
+#             elements = ITdataCvter(IT_data[i]['IT_code'])
+#             IT_flag = getITtype(elements)
+#             print(IT_flag)
+#             if IT_flag == 'NJU':
+#                 code = generate_njupycode(elements, njucode_template)
+#                 with open(os.path.join(ProjectPath, 'ITprogram' + str(i) + '.py'), 'w') as f:
+#                     f.write(code)
+#             elif IT_flag == 'YDS':
+#                 codes = generate_ydspycode(elements, ydscode_template)
+#                 for j in range(len(codes)):
+#                     code = codes[j]
+#                     with open(os.path.join(ProjectPath, 'ITprogram' + str(j) + '.py'), 'w') as f:
+#                         f.write(code)
+#                     code_index.append('ITprogram' + str(i) + '.py')
+#             elif IT_flag == 'FML':
+#                 code = generate_fmlpycode(elements, fmlcode_template)
+#                 with open(os.path.join(ProjectPath, 'ITprogram' + str(i) + '.py'), 'w') as f:
+#                     f.write(code)
+#             elif IT_flag == 'steel':
+#                 code = generate_detectpycode(elements, detect_template)
+#                 with open(os.path.join(ProjectPath, 'ITprogram' + str(i) + '.py'), 'w') as f:
+#                     f.write(code)
+#                 code_index.append('ITprogram' + str(i) + '.py')
+#             elif IT_flag == 'TerminalDet':
+#                 # terminal_detect_template, generate_TerminalDetectPycode
+#                 code = generate_TerminalDetectPycode(elements, terminal_detect_template)
+#                 with open(os.path.join(ProjectPath, 'ITprogram' + str(i) + '.py'), 'w') as f:
+#                     f.write(code)
+#                 code_index.append('ITprogram' + str(i) + '.py')
+
+#     return code_index
+
+def save_it_code(ProjectPath, data):
+    return
+
+def get_load_mode(data):
+    if data.get('load') is None:
+        return 'default'
+    else:
+        return data['load']
+
 def main():
     # 从 stdin 读取所有数据
     raw = sys.stdin.read()
     # print(raw)
     data = json.loads(raw)
-
+    
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    ProjectPath = os.path.join(current_dir, 'program')
+    # 上一级文件夹
+    parent_dir = os.path.dirname(current_dir)
+    ProjectPath = os.path.join(parent_dir, 'program')
     if not os.path.exists(ProjectPath):
         os.makedirs(ProjectPath)
 
     OT_data = OTdataCvter(data, TEMPLATE_DATA)
 
-    try:
-        URL = data['plant'][0]
-    except:
-        print('No plant URL found')
-        URL = ''
-
     with open(os.path.join(ProjectPath, 'config.json'), 'w') as f:
         json.dump({"planturl":URL}, f)
 
+    OT_flag = False
 
     if OT_data == {}:
         print('OT data is empty')
         pass
     else:
         try:
-            Controller = ProjectController(OT_data)
-            Controller.Createxml()
-            Controller.SaveXMLFile(os.path.join(ProjectPath, 'plc.xml'))
-
-            program_filepath = os.path.join(ProjectPath, "generated_plc.st")
-
-            errors = []
-            warnings = []
-            ProgramChunks = GenerateCurrentProgram(Controller, Controller.Project, errors, warnings)
-            program_text = "".join([item[0] for item in ProgramChunks])
-
-            programfile = open(program_filepath, "w")
-            programfile.write(program_text.encode("utf-8"))
-            programfile.close() 
-            print('OT data converted successfully')
-            log_path = os.path.join(ProjectPath, 'log.txt')
-            with open(log_path, 'w') as f:
-                f.write('Compiled')
+            program_filepath, project_xml = plc_conversion(ProjectPath, OT_data)
+            OT_flag = True
         except Exception as e:
             print('Error in OT data conversion')
             print(traceback.format_exc())
-            
+
+    # 编译
+    if OT_flag:
+        compile_path = "./scripts/compile_program.sh"
+        compile_st_code(compile_path, program_filepath, os.path.join(parent_dir, "OpenPLC_v3", "webserver"))
 
     code_index = []
+    py_code_index = []
+    cpp_code_index = []
+    c_code_index = []
+
+    try:
+        py_code_index = save_py_code(ProjectPath, data)
+        print('Python code saved successfully')
+    except Exception as e:
+        print('Error in Python data conversion')
+        print(traceback.format_exc())
+    
+    try:
+        c_code_index = save_c_code(ProjectPath, data)
+        print('C code saved successfully')
+    except Exception as e:
+        print('Error in C data conversion')
+        print(traceback.format_exc())
+
+    try:
+        cpp_code_index = save_cpp_code(ProjectPath, data)
+        print('C++ code saved successfully')
+    except Exception as e:
+        print('Error in C++ data conversion')
+        print(traceback.format_exc())
 
     # IT
     try:
-        IT_data = data['IT']
-        if IT_data == {}:
-            print('IT data is empty')
-            pass
-        else:
-            for i in range(len(IT_data)):
-                elements = ITdataCvter(IT_data[i]['IT_code'])
-                IT_flag = getITtype(elements)
-                print(IT_flag)
-                if IT_flag == 'NJU':
-                    code = generate_njupycode(elements, njucode_template)
-                    with open(os.path.join(ProjectPath, 'ITprogram' + str(i) + '.py'), 'w') as f:
-                        f.write(code)
-                elif IT_flag == 'YDS':
-                    codes = generate_ydspycode(elements, ydscode_template)
-                    for j in range(len(codes)):
-                        code = codes[j]
-                        with open(os.path.join(ProjectPath, 'ITprogram' + str(j) + '.py'), 'w') as f:
-                            f.write(code)
-                        code_index.append('ITprogram' + str(i) + '.py')
-                elif IT_flag == 'FML':
-                    code = generate_fmlpycode(elements, fmlcode_template)
-                    with open(os.path.join(ProjectPath, 'ITprogram' + str(i) + '.py'), 'w') as f:
-                        f.write(code)
-                elif IT_flag == 'steel':
-                    code = generate_detectpycode(elements, detect_template)
-                    with open(os.path.join(ProjectPath, 'ITprogram' + str(i) + '.py'), 'w') as f:
-                        f.write(code)
-                    code_index.append('ITprogram' + str(i) + '.py')
-                elif IT_flag == 'TerminalDet':
-                    # terminal_detect_template, generate_TerminalDetectPycode
-                    code = generate_TerminalDetectPycode(elements, terminal_detect_template)
-                    with open(os.path.join(ProjectPath, 'ITprogram' + str(i) + '.py'), 'w') as f:
-                        f.write(code)
-                    code_index.append('ITprogram' + str(i) + '.py')
+        code_index = save_it_code(ProjectPath, data)
+        print('IT code saved successfully')
     except Exception as e:
         print('Error in IT data conversion')
         print(traceback.format_exc())
+
+    load_mode = get_load_mode(data)
+    # if load_mode == "download":
+    #     ### 代码下发 ###
+    #     try:
+    #         if data.get('plant') is None:
+    #             print('No plant URL found')
+    #             URL = ''
+    #             pass
+    #         URL = data['plant'][0]
+    #         print("Start uploading code to plant:", URL)
+    #         if OT_flag:
+    #             upload_file(f'http://{URL}:{PORT}', program_filepath)
+
+    #         for py_file in py_code_index:
+    #             upload_py_file(f'http://{URL}:{PORT}', os.path.join(ProjectPath, py_file))
+    #         for c_file in c_code_index:
+    #             upload_c_file(f'http://{URL}:{PORT}', os.path.join(ProjectPath, c_file))
+    #     except:
+    #         print('Upload code failed')
+    #         URL = ''
     
 
 if __name__ == "__main__":
