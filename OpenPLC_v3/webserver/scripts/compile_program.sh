@@ -17,7 +17,8 @@ echo "$1" > ../active_program
 #compiling the ST file into C
 cd ..
 echo "Generating C files..."
-./iec2c -f -l -p -r -R -a ./st_files/"$1"
+# ./iec2c -f -l -p -r -R -a ./st_files/"$1"
+./iec2c -f -l -p -r -R -a "$1"
 if [ $? -ne 0 ]; then
     echo "Error generating C files"
     echo "Compilation finished with errors!"

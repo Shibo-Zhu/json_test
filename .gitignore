@@ -1,6 +1,6 @@
 *.pyc
 program/*
-
+.log
 # where docs are output to on gitlab.. MUST be named public/
 public/
 
