@@ -20,7 +20,7 @@ def upload_json():
     json_data = file.read()   # 直接读取文件内容 (bytes)
     with open(os.path.join(current_dir, "input.json"), "wb") as f:
         f.write(json_data)
-    python_exe = os.path.join(current_dir, "jsonConvert", "env", "python.exe")
+    python_exe = os.path.join("/home/zs/miniconda3/envs/openplc/bin/python2.7")
     script_path = os.path.join(current_dir, "jsonConvert", "json2xml_test.py")
     try:
         # 把 JSON 数据传到 Python2 脚本的 stdin

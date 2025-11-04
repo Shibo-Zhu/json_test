@@ -1,11 +1,3 @@
-OpenPLC_Editor/
-OpenPLC_v3/
-env/
-matiec_windows/
-*.zip
-*.pyc
-program/*
-.log
 # where docs are output to on gitlab.. MUST be named public/
 public/
 

@@ -583,6 +583,61 @@ def get_desktop_path():
         desktop = os.path.join(os.path.join(os.path.expanduser('~')), 'Desktop')
     return desktop
 
+### OT代码下发、监控变量功能 ###
+
+def upload_file(file_path):
+    # 判断上传的文件是否是.st文件
+    if not file_path.endswith('.st'):
+        print('Invalid file type. Only .st files are supported.')
+        exit()
+    # 构造文件上传的数据
+    files = {'file': open(file_path, 'rb')}
+
+    # 发送POST请求
+    url_file = url+'/upload'
+    response = requests.post(url_file, files=files)
+    print('Status Code:', response.status_code)
+    print('Response Body:', response.text)
+
+
+def add_debug_vars():
+    url_debug = url+'/add_debug_vars'
+    payload = [
+        {'name': 'sr1', 'location': '%IX0.0', 'type': 'BOOL'},
+        {'name': 'stop1', 'location': '%QX0.0', 'type': 'BOOL'},
+    ]
+
+    response = requests.post(url_debug, json=payload)
+    print('Status Code:', response.status_code)
+    print('Response Body:', response.text)
+
+def add_shared_vars():
+    url_shared = url + "/add_shared_vars"
+
+    payload = [{"name": "steel", "initial_value": 1}]
+    response = requests.post(url_shared, json=payload)
+    print('Status Code:', response.status_code)
+    print('Response Body:', response.text)
+
+### IT代码下发功能 ###
+# 上传Python脚本
+def upload_py_file(file_path):
+    files = {'file': open(file_path, 'rb')}
+    #data = {'priority':priority}
+    url_file = url+'/uploadPy'
+    response = requests.post(url_file, files=files)
+    print(response.text)
+
+
+def upload_c_file(file_path):
+    files = {'file': open(file_path, 'rb')}
+    # data = {'priority':priority}
+    url_file = url + '/uploadC'
+    response = requests.post(url_file, files=files)
+    print(response.text)
+
+
+
 ProjectPath = get_desktop_path()
 current_dir = os.path.dirname(os.path.abspath(__file__))
 # ProjectPath = os.path.join(current_dir, 'OT')
@@ -602,12 +657,13 @@ def open_file():
     return file_path
 
 # 调用函数
-selected_file = open_file()
+# selected_file = open_file()
 
 # json file，用户自主选择要编译哪一个项目
 # filepath = os.path.join(ProjectPath, 'project.json')
-filepath = selected_file
+# filepath = selected_file
 # filepath = 'E:\Graduation_project\Code\json2xml\jsonConvert\\project.json'
+filepath = '/media/zs/ubuntu_disk/json_test/json_test/i220-plc-v1.json'
 
 with open(filepath, 'r') as f:
     data = json.load(f)
@@ -624,9 +680,6 @@ try:
 except:
     print('No plant URL found')
     URL = ''
-
-with open(os.path.join(ProjectPath, 'config.json'), 'w') as f:
-    json.dump({"planturl":URL}, f)
 
 
 if OT_data == {}:
@@ -655,6 +708,23 @@ else:
         print('Error in OT data conversion')
         print(traceback.format_exc())
         
+# 本地编译
+    if OT_flag:
+        compile_path = "./scripts/compile_program.sh"
+        
+        process = subprocess.Popen(
+            [compile_path, program_filepath],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,   # 把错误输出合并到标准输出
+            universal_newlines=True,     # Python 2 下代替 text=True
+            cwd=os.path.join(parent_dir, "OpenPLC_v3", "webserver")
+        )
+
+        for line in process.stdout:
+            print(line)  # Python 2 写法，末尾逗号表示不换行
+
+        process.wait()  # 等待脚本结束
+        print("\n退出码:", process.returncode)
 
 code_index = []
 
@@ -734,5 +804,7 @@ except Exception as e:
     print('Error in sending IT code')
     print(traceback.format_exc())
     
+
+
 
 

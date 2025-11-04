@@ -588,20 +588,20 @@ def OTdataCvter(front_data, template_data):
             tem_prog['body'] = body
 
             template_data['pou']['functionBlock'].append(tem_prog)
-
-    for prog in front_data['pou']['libFB']:
-        for var in prog['variable']:
-            for key in var:
-                if var[key] == '...':
-                    var[key] = ''
-        if prog['language'] == 'ST':
-            tem_prog = {}
-            tem_prog['name'] = prog['name']
-            tem_prog['language'] = prog['language']
-            tem_prog['type'] = prog['type']
-            tem_prog['variable'] = prog['variable']
-            tem_prog['body'] = prog['code']
-            template_data['pou']['libFB'].append(tem_prog)
+    
+    # for prog in front_data['pou']['libFB']:
+    #     for var in prog['variable']:
+    #         for key in var:
+    #             if var[key] == '...':
+    #                 var[key] = ''
+    #     if prog['language'] == 'ST':
+    #         tem_prog = {}
+    #         tem_prog['name'] = prog['name']
+    #         tem_prog['language'] = prog['language']
+    #         tem_prog['type'] = prog['type']
+    #         tem_prog['variable'] = prog['variable']
+    #         tem_prog['body'] = prog['code']
+    #         template_data['pou']['libFB'].append(tem_prog)
 
     OT_data = template_data
     return OT_data
