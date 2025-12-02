@@ -1,3 +1,8 @@
+OpenPLC_Editor/
+OpenPLC_v3/
+env/
+matiec_windows/
+*.zip
 *.pyc
 program/*
 .log
