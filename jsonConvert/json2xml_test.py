@@ -677,6 +677,8 @@ def save_py_code(ProjectPath, data):
     else:
         for py_data in python_data:
             filename = py_data['filename']
+            if not filename.endswith(".py"):
+                filename = filename + ".py"
             code = py_data['text']
             with open(os.path.join(ProjectPath, filename), 'w') as f:
                 f.write(code)
@@ -694,6 +696,8 @@ def save_c_code(ProjectPath, data):
     else:
         for c_d in c_data:
             filename = c_d['filename']
+            if not filename.endswith(".c"):
+                filename = filename + ".c"
             code = c_d['text']
             with open(os.path.join(ProjectPath, filename), 'w') as f:
                 f.write(code)
@@ -711,6 +715,8 @@ def save_cpp_code(ProjectPath, data):
     else:
         for cpp_d in cpp_data:
             filename = cpp_d['filename']
+            if not filename.endswith(".cpp"):
+                filename = filename + ".cpp"
             code = cpp_d['text']
             with open(os.path.join(ProjectPath, filename), 'w') as f:
                 f.write(code)
@@ -777,6 +783,8 @@ def main():
     data = json.loads(raw)
     
     current_dir = os.path.dirname(os.path.abspath(__file__))
+    with open(os.path.join(current_dir, "i220-plc-zs.json"), "w") as f:
+        json.dump(data, f)
     # 上一级文件夹
     parent_dir = os.path.dirname(current_dir)
     ProjectPath = os.path.join(parent_dir, 'program')
@@ -841,25 +849,32 @@ def main():
         print(traceback.format_exc())
 
     load_mode = get_load_mode(data)
-    # if load_mode == "download":
-    #     ### 代码下发 ###
-    #     try:
-    #         if data.get('plant') is None:
-    #             print('No plant URL found')
-    #             URL = ''
-    #             pass
-    #         URL = data['plant'][0]
-    #         print("Start uploading code to plant:", URL)
-    #         if OT_flag:
-    #             upload_file(f'http://{URL}:{PORT}', program_filepath)
+    if load_mode == "download":
+        ### 代码下发 ###
+        try:
+            if data.get('plant') is None:
+                print('No plant URL found')
+                URL = ''
+                pass
+            URL = data['plant'][0]
+            print("Start uploading code to plant:", URL)
+            print(OT_flag)
+            if OT_flag:
+                # upload_file(f'http://{URL}:{PORT}', program_filepath)
+                upload_file("http://" + URL + ":" + PORT, program_filepath)
+            for py_file in py_code_index:
+                upload_py_file("http://" + URL + ":" + PORT, os.path.join(ProjectPath, py_file))
+            for c_file in c_code_index:
+                upload_c_file("http://" + URL + ":" + PORT, os.path.join(ProjectPath, c_file))
+        except:
+            print('Upload code failed')
+            URL = ''
 
-    #         for py_file in py_code_index:
-    #             upload_py_file(f'http://{URL}:{PORT}', os.path.join(ProjectPath, py_file))
-    #         for c_file in c_code_index:
-    #             upload_c_file(f'http://{URL}:{PORT}', os.path.join(ProjectPath, c_file))
-    #     except:
-    #         print('Upload code failed')
-    #         URL = ''
+        try:
+            share_vars = data["sharedVars"]
+            add_shared_vars("http://" + URL + ":" + PORT, share_vars)
+        except:
+            print("Add share variables fail!")
     
 
 if __name__ == "__main__":
