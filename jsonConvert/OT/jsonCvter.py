@@ -2,6 +2,7 @@ import json
 import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 TEMPLATE_DATA = {"pou": {"program": [],"function":[],"functionBlock":[],"libFB":[]}, "config": {},"contentHeader": "LD_Language"}
+STANDARD_FB = ['SR', 'RS', 'SEMA', 'R_TRIG', 'F_TRIG', 'CTU', 'CTU_DINT', 'CTU_LINT', 'CTU_UDINT', 'CTU_ULINT', 'CTD', 'CTD_DINT', 'CTD_LINT', 'CTD_UDINT', 'CTD_ULINT', 'CTUD', 'CTUD_DINT', 'CTUD_LINT', 'CTUD_UDINT', 'CTUD_ULINT', 'TP', 'TON', 'TOF']
 
 def getsourcePoint(block, port=None):
     point = []
@@ -101,12 +102,22 @@ def OTdataCvter(front_data, template_data):
                 sourceblock = blocks[sourceID-1]
                 targetblock = blocks[targetID-1]
 
-                sourcePoint = []
-                sourcePoint.append(sourceblock['position']['x']+sourceblock['portPosition']['outPorts'][0]['out']['x'])
-                sourcePoint.append(sourceblock['position']['y']+sourceblock['portPosition']['outPorts'][0]['out']['y'])
-                targetPoint = []
-                targetPoint.append(targetblock['position']['x']+targetblock['portPosition']['inPorts'][0]['in']['x'])
-                targetPoint.append(targetblock['position']['y']+targetblock['portPosition']['inPorts'][0]['in']['y'])
+                if sourceblock['type'] in ['Variable', 'LeftRail', 'RightRail', 'Coil', 'Contact']:
+                    sourcePort = ''
+                else:
+                    sourcePort = link['SourceID']['port']
+
+                targetPort = link['TargetID']['port']
+
+                sourcePoint = getsourcePoint(sourceblock, sourcePort)
+                targetPoint = gettargetPoint(targetblock, targetPort)
+
+                # sourcePoint = []
+                # sourcePoint.append(sourceblock['position']['x']+sourceblock['portPosition']['outPorts'][0]['out']['x'])
+                # sourcePoint.append(sourceblock['position']['y']+sourceblock['portPosition']['outPorts'][0]['out']['y'])
+                # targetPoint = []
+                # targetPoint.append(targetblock['position']['x']+targetblock['portPosition']['inPorts'][0]['in']['x'])
+                # targetPoint.append(targetblock['position']['y']+targetblock['portPosition']['inPorts'][0]['in']['y'])
 
                 edited_inPort = []
 
@@ -115,7 +126,7 @@ def OTdataCvter(front_data, template_data):
                         LeftRail_id = sourceID
                         LeftRail_point = [sourceblock['position']['x'],sourceblock['position']['y']]
                         edited_sourceblock.append(sourceID)
-                        blockinfo = {'class':sourceblock['type'],'id': sourceID, 'x': sourceblock['position']['x'], 'y': sourceblock['position']['y'],
+                        blockinfo = {'_type':sourceblock['type'], 'class':sourceblock['type'],'id': sourceID, 'x': sourceblock['position']['x'], 'y': sourceblock['position']['y'],
                                         'width': sourceblock['size']['width'], 'height': sourceblock['size']['height'], 'type': 0,
                                         'connectors': {'inputs': [], 'outputs': [{"pos":[sourceblock['portPosition']['outPorts'][0]['out']['x'],sourceblock['portPosition']['outPorts'][0]['out']['y']]}]}}
                         # body['powerrail'].append(blockinfo)
@@ -130,7 +141,7 @@ def OTdataCvter(front_data, template_data):
 
                 if targetblock['type'] == 'RightRail':
                     edited_targetblock.append(targetID)
-                    blockinfo = {'class':targetblock['type'], 'id': targetID, 'x': targetblock['position']['x'], 'y': targetblock['position']['y'],
+                    blockinfo = {'_type':targetblock['type'], 'class':targetblock['type'], 'id': targetID, 'x': targetblock['position']['x'], 'y': targetblock['position']['y'],
                                     'width': targetblock['size']['width'], 'height': targetblock['size']['height'], 'type': 1,
                                     'connectors': {'inputs': [{"wire":[{"formalParameter":"","points":[targetPoint,sourcePoint],"refLocalId":sourceID}],"pos":[targetblock['portPosition']['inPorts'][0]['in']['x'],targetblock['portPosition']['inPorts'][0]['in']['y']]}], 'outputs': []}}
                     # body['powerrail'].append(blockinfo)
@@ -144,7 +155,7 @@ def OTdataCvter(front_data, template_data):
                     edited_sourceblock.append(sourceID)
                     if sourceID not in edited_block:
                         edited_block.append(sourceID)
-                        blockinfo = {'class':sourceblock['type'], 'id': sourceID, 'x': sourceblock['position']['x'], 'y': sourceblock['position']['y'],
+                        blockinfo = {'_type':targetblock['type'], 'class':sourceblock['type'], 'id': sourceID, 'x': sourceblock['position']['x'], 'y': sourceblock['position']['y'],
                                         'width': sourceblock['size']['width'], 'height': sourceblock['size']['height'], 'modifier': sourceblock['modifier'], 'variable': sourceblock['name'],
                                         'connectors': {'inputs': [], 'outputs': [{"pos":[sourceblock['portPosition']['outPorts'][0]['out']['x'],sourceblock['portPosition']['outPorts'][0]['out']['y']]}]}}
                     else:
@@ -158,7 +169,7 @@ def OTdataCvter(front_data, template_data):
                     if targetID not in edited_block:
                         edited_block.append(targetID)
                         edited_targetblock.append(targetID)
-                        blockinfo = {'class':targetblock['type'], 'id': targetID, 'x': targetblock['position']['x'], 'y': targetblock['position']['y'],
+                        blockinfo = {'_type':targetblock['type'], 'class':targetblock['type'], 'id': targetID, 'x': targetblock['position']['x'], 'y': targetblock['position']['y'],
                                         'width': targetblock['size']['width'], 'height': targetblock['size']['height'], 'modifier': targetblock['modifier'], 'variable': targetblock['name'],
                                         'connectors': {'inputs': [{"wire":[{"formalParameter":"","points":[targetPoint,sourcePoint],"refLocalId":sourceID}],"pos":[targetblock['portPosition']['inPorts'][0]['in']['x'],targetblock['portPosition']['inPorts'][0]['in']['y']]}], 'outputs': []}}
                     elif targetID in edited_sourceblock and targetID not in edited_targetblock:
@@ -176,7 +187,7 @@ def OTdataCvter(front_data, template_data):
                     edited_sourceblock.append(sourceID)
                     if sourceID not in edited_block:
                         edited_block.append(sourceID)
-                        blockinfo = {'class':sourceblock['type'], 'id': sourceID, 'x': sourceblock['position']['x'], 'y': sourceblock['position']['y'],
+                        blockinfo = {'_type':sourceblock['type'], 'class':sourceblock['type'], 'id': sourceID, 'x': sourceblock['position']['x'], 'y': sourceblock['position']['y'],
                                         'width': sourceblock['size']['width'], 'height': sourceblock['size']['height'], 'modifier': sourceblock['modifier'], 'variable': sourceblock['name'],
                                         'connectors': {'inputs': [], 'outputs': [{"pos":[sourceblock['portPosition']['outPorts'][0]['out']['x'],sourceblock['portPosition']['outPorts'][0]['out']['y']]}]}}
                     else:
@@ -190,7 +201,7 @@ def OTdataCvter(front_data, template_data):
                     if targetID not in edited_block:
                         edited_block.append(targetID)
                         edited_targetblock.append(targetID)
-                        blockinfo = {'class':targetblock['type'], 'id': targetID, 'x': targetblock['position']['x'], 'y': targetblock['position']['y'],
+                        blockinfo = {'_type':targetblock['type'], 'class':targetblock['type'], 'id': targetID, 'x': targetblock['position']['x'], 'y': targetblock['position']['y'],
                                         'width': targetblock['size']['width'], 'height': targetblock['size']['height'], 'modifier': targetblock['modifier'], 'variable': targetblock['name'],
                                         'connectors': {'inputs': [{"wire":[{"formalParameter":"","points":[targetPoint,sourcePoint],"refLocalId":sourceID}],"pos":[targetblock['portPosition']['inPorts'][0]['in']['x'],targetblock['portPosition']['inPorts'][0]['in']['y']]}], 'outputs': []}}
                     elif targetID in edited_sourceblock and targetID not in edited_targetblock:
@@ -203,23 +214,86 @@ def OTdataCvter(front_data, template_data):
                         blockinfo['connectors']['inputs'][0]['wire'].append({"formalParameter":"","points":[targetPoint,sourcePoint],"refLocalId":sourceID})
                     elements[str(targetID)] = blockinfo
 
+                if sourceblock['type'] == 'Variable':
+                    if sourceID not in edited_sourceblock:
+                        edited_sourceblock.append(sourceID)
+                        if sourceID not in edited_targetblock:
+                            edited_block.append(sourceID)
+                            blockinfo = {'_type':sourceblock['type'], 'type':sourceblock['type'],'class':sourceblock['modifier'], 'id': sourceID, 'x': sourceblock['position']['x'], 'y': sourceblock['position']['y'],'width': sourceblock['size']['width'], 'height': sourceblock['size']['height'], 'var_type': sourceblock['var_type'],'expression': sourceblock['name'],'executionOrder': sourceblock['executionOder'],'connectors': {'inputs': [], 'outputs': [{"pos":[int(sourceblock['portPosition']['outPorts'][0]['out']['x']),int(sourceblock['portPosition']['outPorts'][0]['out']['y'])]}]}}
+                        else:
+                            blockinfo = elements[str(sourceID)]
+                            blockinfo['connectors']['outputs'].append({"pos":[int(sourceblock['portPosition']['outPorts'][0]['out']['x']),int(sourceblock['portPosition']['outPorts'][0]['out']['y'])]})
+                        elements[str(sourceID)] = blockinfo
+
+                if targetblock['type'] == 'Variable':
+                    if targetID not in edited_targetblock:
+                        edited_targetblock.append(sourceID)
+                        blockinfo = {'_type':targetblock['type'], 'type':targetblock['type'],'class':targetblock['modifier'], 'id': targetID, 'x': targetblock['position']['x'], 'y': targetblock['position']['y'],'width': targetblock['size']['width'], 'height': targetblock['size']['height'], 'var_type': targetblock['var_type'],'expression': targetblock['name'],'executionOrder': targetblock['executionOder'],'connectors': {'inputs': [{'wire':[{"formalParameter":sourcePort,"points":[targetPoint,sourcePoint],"refLocalId":sourceID}],'pos':[int(targetblock['portPosition']['inPorts'][0]['in']['x']),int(targetblock['portPosition']['inPorts'][0]['in']['y'])]}], 'outputs': []}}
+                        elements[str(targetID)] = blockinfo
+
+                # ------ Standard FB ------
+                if targetblock['type'] in STANDARD_FB:
+                    if targetID not in edited_targetblock:
+                        edited_targetblock.append(targetID)
+                        inPorts = targetblock['portPosition']['inPorts']
+                        outPorts = targetblock['portPosition']['outPorts']
+                        outputs = []
+                        for port in outPorts:
+                            for key, value in port.items():
+                                if key != 'modifier' and key != 'type':
+                                    outputs.append({"modifier": port['modifier'], "type": port['type'], "name": key,
+                                                    "pos": [int(port[key]['x']), int(port[key]['y'])]})
+
+                        for port in inPorts:
+                            if targetPort in port:
+                                blockinfo = {'_type': targetblock['type'], 'type': targetblock['type'],
+                                             'id': targetID, 'name': targetblock['name'],
+                                             'x': targetblock['position']['x'], 'y': targetblock['position']['y'],
+                                             'width': targetblock['size']['width'],
+                                             'height': targetblock['size']['height'],
+                                             'executionControl': targetblock['executionControl'],
+                                             'executionOrder': targetblock['executionOder'], 'connectors': {
+                                        'inputs': [
+                                            {"modifier": port['modifier'], "type": port['type'], "name": targetPort,
+                                             "wire": [{"formalParameter": sourcePort,
+                                                       "points": [targetPoint, sourcePoint],
+                                                       "refLocalId": sourceID}],
+                                             "pos": [int(port[targetPort]['x']), int(port[targetPort]['y'])]}],
+                                        'outputs': outputs}}
+                        elements[str(targetID)] = blockinfo
+                    else:
+                        blockinfo = elements[str(targetID)]
+                        inPorts = targetblock['portPosition']['inPorts']
+                        for port in inPorts:
+                            if targetPort in port:
+                                blockinfo = elements[str(targetID)]
+                                blockinfo['connectors']['inputs'].append(
+                                    {"modifier": port['modifier'], "type": port['type'], "name": targetPort,
+                                     "wire": [{"formalParameter": sourcePort, "points": [targetPoint, sourcePoint],
+                                               "refLocalId": sourceID}],
+                                     "pos": [int(port[targetPort]['x']), int(port[targetPort]['y'])]})
+                        elements[str(targetID)] = blockinfo
+
                 # print(elements)
             with open(os.path.join(current_dir,'element.json'), 'w') as f:
                 json.dump(elements, f, indent=4)
 
             for element in elements:
-                if elements[element]['class'] == 'LeftRail' or elements[element]['class'] == 'RightRail':
+                if elements[element]['_type'] == 'LeftRail' or elements[element]['_type'] == 'RightRail':
                     body['powerrail'].append(elements[element])
-
-                elif elements[element]['class'] == 'Coil':
+                elif elements[element]['_type'] == 'Coil':
                     body['coil'].append(elements[element])
-                elif elements[element]['class'] == 'Contact':
+                elif elements[element]['_type'] == 'Contact':
                     body['contact'].append(elements[element])
+                elif elements[element]['_type'] == 'Variable':
+                    body['variable'].append(elements[element])
+                elif elements[element]['_type'] in STANDARD_FB:
+                    body['block'].append((elements[element]))
 
             tem_prog['body'] = body
 
             template_data['pou']['program'].append(tem_prog)
-            with open(os.path.join(current_dir,'data.json'), 'w') as f:
+            with open(os.path.join(current_dir,'LK220-LD2104-data.json'), 'w') as f:
                 json.dump(template_data, f, indent=4)
         elif prog['language'] == 'FBD':
             tem_prog = {}
